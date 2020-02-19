@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/order_background"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="@string/place_an_order_header"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:padding="4dp"
+                android:text="@string/double_double" />
+
+            <TextView
+                android:id="@+id/doubleDoublePriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/doubleDoubleQuantityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:padding="4dp"
+                android:text="@string/cheeseburger" />
+
+            <TextView
+                android:id="@+id/cheeseburgerPriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/cheeseburgerQuantityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:padding="4dp"
+                android:text="@string/french_fries" />
+
+            <TextView
+                android:id="@+id/frenchFriesPriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/frenchFriesQuantityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="4dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:padding="4dp"
+                android:text="@string/shakes" />
+
+            <TextView
+                android:id="@+id/shakesPriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/shakesQuantityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_span="3"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="@string/fountain_drinks_pick_size" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:padding="4dp"
+                android:text="@string/small_drink" />
+
+            <TextView
+                android:id="@+id/smallDrinksPriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/smallDrinksQuantityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:padding="4dp"
+                android:text="@string/medium_drink" />
+
+            <TextView
+                android:id="@+id/mediumDrinksPriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/mediumDrinksQuantityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_weight="5"
+                android:gravity="center_vertical|end"
+                android:padding="4dp"
+                android:text="@string/large_drink" />
+
+            <TextView
+                android:id="@+id/largeDrinksPriceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="4dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical|end"
+                android:padding="4dp" />
+
+            <EditText
+                android:id="@+id/largeDrinksQuantityEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="3"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:padding="4dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/placeOrderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_span="3"
+                android:gravity="center"
+                android:onClick="placeOrder"
+                android:padding="8dp"
+                android:text="@string/place_order_button_text" />
+        </TableRow>
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
