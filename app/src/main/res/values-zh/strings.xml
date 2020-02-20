@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">In and Out</string>
+    <string name="cheeseburger">芝士汉堡</string>
+    <string name="double_double">" 双双"</string>
+    <string name="fountain_drinks_pick_size">喷泉饮料（精选尺寸）</string>
+    <string name="french_fries">炸薯条</string>
+    <string name="large_drink">大</string>
+    <string name="medium_drink">介质</string>
+    <string name="place_an_order_header">下订单</string>
+    <string name="place_order_button_text">下订单</string>
+    <string name="shakes">摇动</string>
+    <string name="small_drink">小</string>
+    <string name="start_new_order_button_text">开始新订单</string>
+</resources>

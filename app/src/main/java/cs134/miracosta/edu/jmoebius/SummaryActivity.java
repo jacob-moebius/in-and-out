@@ -12,8 +12,16 @@ import java.util.Locale;
 
 import cs134.miracosta.edu.jmoebius.model.Order;
 
+/**
+ * Summary Activity contains the information of the order: number of items purchased, the subtotal,
+ * the taxed amount, and the total. Also has a Button to allow the user to go back to the Order
+ * Activity to start a new order.
+ *
+ * @author Jacob Moebius
+ */
 public class SummaryActivity extends AppCompatActivity {
 
+    // Instance variables to connect Controller with the View
     private Order order;
     private TextView orderTotalTextView;
     private TextView itemsOrderedTextView;
@@ -27,7 +35,7 @@ public class SummaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
 
-        // Extract data from the MainActivity via Intent
+        // Extract data from the OrderActivity via Intent
         int doubleDoubleQuantity,
                 cheeseburgerQuantity,
                 frenchFriesQuantity,
@@ -36,7 +44,7 @@ public class SummaryActivity extends AppCompatActivity {
                 mediumDrinksQuantity,
                 largeDrinksQuantity;
 
-        // Create an intent by getting the MainActivity Intent. Get MainActivity data entries with
+        // Create an intent by getting the OrderActivity Intent. Get OrderActivity data entries with
         // get<Type>Extra() calls
         Intent intent = getIntent();
         doubleDoubleQuantity = intent.getIntExtra("DoubleDoubleQuantity", 0);
@@ -77,6 +85,12 @@ public class SummaryActivity extends AppCompatActivity {
         taxRateTextView.setText(String.format("Tax (%s): %s", percent.format(Order.TAX_RATE), currency.format(order.calculateTax())));
     }
 
+    /**
+     * onClick method for startNewOrderButton that sends the user back to the Order Activity to
+     * start a new order.
+     *
+     * @param v     View that was clicked
+     */
     public void startNewOrder(View v) {
         // Done with SummaryActivity, so "finish" it
         finish();

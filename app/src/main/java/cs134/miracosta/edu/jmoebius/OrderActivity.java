@@ -13,9 +13,15 @@ import java.util.Locale;
 
 import cs134.miracosta.edu.jmoebius.model.Order;
 
-public class MainActivity extends AppCompatActivity {
+/**
+ * Main Activity that is launched when the app launches. Contains the menu and editText fields for
+ * ordering items off the menu as well as a Button to submit the order.
+ *
+ * @author Jacob Moebius
+ */
+public class OrderActivity extends AppCompatActivity {
 
-    //Instance variables to connect Controller with the View
+    // Instance variables to connect Controller with the View
     private EditText doubleDoubleQuantityEditText;
     private EditText cheeseburgerQuantityEditText;
     private EditText frenchFriesQuantityEditText;
@@ -36,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_order);
 
         // Wire up Views
         doubleDoubleQuantityEditText = findViewById(R.id.doubleDoubleQuantityEditText);
@@ -65,16 +71,23 @@ public class MainActivity extends AppCompatActivity {
         largeDrinksPriceTextView.setText(currency.format(Order.PRICE_DRINK_LARGE));
     }
 
+    /**
+     * onClick() method for placeOrderButton. Builds an Intent and fires it to start the
+     * SummaryActivity, which will show the cost of the order.
+     *
+     * @param v     View that was clicked
+     */
     public void placeOrder(View v) {
 
         int doubleDoubleQuantity,
-                cheeseburgerQuantity,
-                frenchFriesQuantity,
-                shakesQuantity,
-                smallDrinksQuantity,
-                mediumDrinksQuantity,
-                largeDrinksQuantity;
+            cheeseburgerQuantity,
+            frenchFriesQuantity,
+            shakesQuantity,
+            smallDrinksQuantity,
+            mediumDrinksQuantity,
+            largeDrinksQuantity;
 
+        // Use try-catch blocks to handle empty editText entries where the user did not order items
         try {
             doubleDoubleQuantity =
                     Integer.parseInt(doubleDoubleQuantityEditText.getText().toString());
